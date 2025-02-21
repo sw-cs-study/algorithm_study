@@ -2,8 +2,6 @@ package baekjoon.week5;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.math.BigDecimal;
-import java.math.BigInteger;
 import java.util.Stack;
 
 /**
@@ -17,7 +15,7 @@ public class BOJ2374_같은수 {
 
 		Stack<Integer> stack = new Stack<>();
 		int maxValue = 0;
-		BigInteger result = new BigInteger("0");//연산 횟수.
+		long result = 0;//연산 횟수.
 
 		for (int i = 0; i < n; i++){
 			int input = Integer.parseInt(br.readLine());
@@ -28,7 +26,7 @@ public class BOJ2374_같은수 {
 			if(!stack.isEmpty() && stack.peek() < input){
 
 				//연산 횟수 구하기 - 수가 크기 때문에 biginteger 이용
-				BigInteger count = new BigInteger("0");
+				long count = 0;
 
 				//스택 돌면서, 새로 들어온 값과 동일하게 만들기
 				//이 과정에서 이전에 있던 값들은 스택에서 빠짐 - 어차피 새로들어온 값으로 맞췄기 때문에, 이후 연산에서는 새로 들어온 값을 바꾸면
@@ -39,12 +37,11 @@ public class BOJ2374_같은수 {
 					int popValue = stack.pop();
 					int peekValue = stack.isEmpty() ? input : stack.peek(); //스택이 비었으면 새로 들어오는 값, 비어있지 않으면 다음 값.
 
-					count = count.add(BigInteger.valueOf(peekValue).subtract(BigInteger.valueOf(popValue)));
-
+					count += peekValue - popValue;
 
 				}
 
-				result = result.add(count);
+				result += count;
 			}
 
 			//새로 들어온 값을 스택에 넣기.
@@ -58,8 +55,7 @@ public class BOJ2374_같은수 {
 			int popValue = stack.pop();
 			int peekValue = stack.isEmpty() ? maxValue : stack.peek(); //스택이 비었으면 새로 들어오는 값, 비어있지 않으면 다음 값.
 
-			result = result.add(BigInteger.valueOf(peekValue).subtract(BigInteger.valueOf(popValue)));
-
+			result += peekValue - popValue;
 		}
 
 		System.out.println(result);
