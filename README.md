@@ -14,5 +14,6 @@
 |3주차(25.02.01 ~ 25.02.07)|[BOJ11049 행렬 곱셈 순서](https://www.acmicpc.net/problem/11049)|[BOJ10472 십자뒤집기](https://www.acmicpc.net/problem/10472)|[BOJ1987 알파벳](https://www.acmicpc.net/problem/1987)|
 |4주차(25.02.08 ~ 25.02.14)|[BOJ2211 네트워크 복구](https://www.acmicpc.net/problem/2211)|[BOJ15483 최소 편집](https://www.acmicpc.net/problem/15483)|[BOJ17352 여러분의 다리가 되어드리겠습니다!](https://www.acmicpc.net/problem/17352)|
 |5주차(25.02.15 ~ 25.02.21)|[BOJ12851 숨바꼭질2](https://www.acmicpc.net/problem/12851)|[BOJ2374 같은 수로 만들기](https://www.acmicpc.net/problem/2374)|[BOJ1414 불우이웃 돕기](https://www.acmicpc.net/problem/1414)|
-|6주차(25.02.22 ~ 25.03.01)|[BOJ27653 최소트리분할](https://www.acmicpc.net/problem/27653)|[BOJ32519 대회전략](https://www.acmicpc.net/problem/32519)|[BOJ2342 Dance Dance Revolution](https://www.acmicpc.net/problem/2342)|
+|6주차(25.02.22 ~ 25.02.28)|[BOJ27653 최소트리분할](https://www.acmicpc.net/problem/27653)|[BOJ32519 대회전략](https://www.acmicpc.net/problem/32519)|[BOJ2342 Dance Dance Revolution](https://www.acmicpc.net/problem/2342)|
+|7주차(25.03.01 ~ 25.03.07)|[BOJ21278 호석이 두마리 치킨](https://www.acmicpc.net/problem/21278)|[BOJ2437 저울](https://www.acmicpc.net/problem/2437)|[BOJ17616 등수 찾기](https://www.acmicpc.net/problem/17616)|
 
