@@ -17,4 +17,5 @@
 |6주차(25.02.22 ~ 25.02.28)|[BOJ27653 최소트리분할](https://www.acmicpc.net/problem/27653)|[BOJ32519 대회전략](https://www.acmicpc.net/problem/32519)|[BOJ2342 Dance Dance Revolution](https://www.acmicpc.net/problem/2342)|
 |7주차(25.03.01 ~ 25.03.07)|[BOJ21278 호석이 두마리 치킨](https://www.acmicpc.net/problem/21278)|[BOJ2437 저울](https://www.acmicpc.net/problem/2437)|[BOJ17616 등수 찾기](https://www.acmicpc.net/problem/17616)|
 |8주차(25.03.08 ~ 25.03.14)|[BOJ21606 아침 산책](https://www.acmicpc.net/problem/21606)|[BOJ1300 K번째 수](https://www.acmicpc.net/problem/1300)|[BOJ2560 짚신벌레](https://www.acmicpc.net/problem/2560)|
+|9주차(25.03.15 ~ 25.03.21)|[BOJ17143 낚시왕](https://www.acmicpc.net/problem/17143)|[BOJ17370 육각형 우리 속의 개미](https://www.acmicpc.net/problem/17370)|[BOJ9470 Strahler 순서](https://www.acmicpc.net/problem/9470)|
 
