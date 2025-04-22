@@ -21,4 +21,6 @@
 |10주차(25.03.22 ~ 25.03.28)|[BOJ14725 개미굴](https://www.acmicpc.net/problem/14725)|[BOJ2878 캔디캔디](https://www.acmicpc.net/problem/2878)|[BOJ2176 합리적인 이동경로](https://www.acmicpc.net/problem/2176)|
 |11주차(25.03.29 ~ 25.04.04)|[BOJ10836 여왕벌](https://www.acmicpc.net/problem/10836)|[BOJ16933 벽부수고 이동하기3](https://www.acmicpc.net/problem/16933)|[BOJ16118 달빛여우](https://www.acmicpc.net/problem/16118)|
 |12주차(25.04.05 ~ 25.04.11)|[BOJ2234 성곽](https://www.acmicpc.net/problem/2234)|[BOJ2307 도로검문](https://www.acmicpc.net/problem/2307)|[BOJ2213 트리의 독립집합](https://www.acmicpc.net/problem/2213)|
+|13주차(25.04.21 ~ 25.04.25)|[BOJ2610 회의준비](https://www.acmicpc.net/problem/2610)|[BOJ2169 로봇조종하기](https://www.acmicpc.net/problem/2169)|[BOJ9370 미확인 도착지](https://www.acmicpc.net/problem/9370)|
+
 
