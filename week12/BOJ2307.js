@@ -23,6 +23,7 @@ for (let i = 0; i < m; i++) {
   edges[a].push([b, c]);
   edges[b].push([a, c]);
 }
+const djikstraPath = Array(n + 1).fill(-1);
 let latency = 0;
 const originalDist = [...Array(n + 1)].fill(Infinity);
 const pq = [[0, 1]]; // [거리, 노드]
@@ -34,6 +35,7 @@ while (pq.length > 0) {
     if (originalDist[nextNode] > dist + nextDist) {
       originalDist[nextNode] = dist + nextDist;
       minHeapPush(pq, [originalDist[nextNode], nextNode]);
+      djikstraPath[node] = nextNode; // 경로 저장
     }
   }
 }
