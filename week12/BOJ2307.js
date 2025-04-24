@@ -35,12 +35,14 @@ while (pq.length > 0) {
     if (originalDist[nextNode] > dist + nextDist) {
       originalDist[nextNode] = dist + nextDist;
       minHeapPush(pq, [originalDist[nextNode], nextNode]);
-      djikstraPath[node] = nextNode; // 경로 저장
+      djikstraPath[nextNode] = node; // 경로 저장
     }
   }
 }
 
-for (let del = 2; del < n; del++) {
+for (let i = 2; i < n + 1; i++) {
+  let [nodeOne, nodeTwo] = [i, djikstraPath[i]];
+
   const delDist = [...Array(n + 1)].fill(Infinity);
   pq.push([0, 1]);
   delDist[1] = 0;
@@ -48,7 +50,12 @@ for (let del = 2; del < n; del++) {
     const [dist, node] = minHeapPop(pq);
     if (dist > delDist[node]) continue; // 이미 더 짧은 경로가 존재
     for (const [nextNode, nextDist] of edges[node]) {
-      if (nextNode === del) continue; // 삭제할 노드
+      if (
+        (nextNode === nodeOne && node === nodeTwo) ||
+        (nextNode === nodeTwo && node === nodeOne)
+      )
+        continue;
+      // 삭제할 간선
       if (delDist[nextNode] > dist + nextDist) {
         delDist[nextNode] = dist + nextDist;
         minHeapPush(pq, [delDist[nextNode], nextNode]);
@@ -60,6 +67,7 @@ for (let del = 2; del < n; del++) {
     latency = v;
   }
 }
+
 if (latency === Infinity) {
   console.log(-1);
 } else {
