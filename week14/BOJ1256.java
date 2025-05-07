@@ -10,6 +10,15 @@
  * -> n과 m중에 하나가0이 되는 경우
  * -> 팩토리얼 값이 최대 200! -> 10^2^100 * 10^9 -> 10^209 > 2^64라서 BigInteger써야함
  * -> -> 128 * 10^6 / 70 > 10 ^ 6 => 1000000자리까지 만들수 있음(10^1000000)
+ * 
+ * 
+ * 다르게 풀기(바텀업) 
+ * dp[i][j] = iCj 
+ * iCj + iC(j+1) = (i+1)Cj 로 채움, 위의 식에서 나오는 것처럼 
+ * ( A, Z가 들어갈 수 있는 자리 중에 A 자리를 고르는 방법) = ( 처음에 A 놓고 나머지에서 A자리를 고르는 방법 ) + ( 처음에 A 외의 문자 놓고 나머지에서 A자리를 고르는 방법 )
+ * -> (n+m)C(n) = (n-1+m)C(n-1) + (n+m-1)C(n) -> iCj = (i-1)C(j-1) + (i-1)C(j)
+ * dp테이블 최댓값은 k+1임 -> k 넘으면 k + 1로 하기
+ * 
  */
 
 
@@ -17,50 +26,50 @@ package week14;
 
 import java.io.*;
 import java.math.BigInteger;
+import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class BOJ1256 {
-    static int n, m;
-    static BigInteger k;
-    static BigInteger[] factorialMemo;
+    static int n, m, k;
+    static int[][] dp;
     public static void main(String args[]) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
         n = Integer.parseInt(st.nextToken());
         m = Integer.parseInt(st.nextToken());
-        k = new BigInteger(st.nextToken());
-        factorialMemo = new BigInteger[n+m+1]; // 0으로 초기화
-        factorialMemo[0] = new BigInteger("1");
+        k = Integer.parseInt(st.nextToken());
+        dp = new int[n+m+1][n+1];
         
-        if ((factorial(m+n).divide(factorial(n).multiply(factorial(m)))).compareTo(k) == -1) {
+        for (int i = 0; i < n + m + 1; i++) {
+            dp[i][0] = 1;
+        }
+        for (int i = 1; i < n + m + 1; i++) {
+            for (int j = 1; j < n + 1; j++) {
+                dp[i][j] = dp[i-1][j-1] + dp[i-1][j];
+                if (dp[i][j] > 1_000_000_000) dp[i][j] = 1_000_000_001;
+            }
+        }
+
+        if (dp[n+m][n] < k) {
             System.out.println(-1);
             return;
         }
-        String answer = "";
-        while (k.compareTo(new BigInteger("0")) == 1 && n > 0 && m > 0) {
-            BigInteger norm = factorial(n-1+m).divide(factorial(n-1).multiply(factorial(m)));
-            if (k.compareTo(norm) <= 0) { // k <= norm
-                answer += "a"; 
+
+        StringBuilder answer = new StringBuilder();
+        while (k > 0 && m > 0 && n > 0) {
+            if (k <= dp[n+m-1][n-1]) {
+                answer.append("a");
                 n--;
-            }
-            else { // k > norm
-                answer += "z";
+            } else {
+                answer.append("z");
+                k -= dp[n+m-1][n-1];
                 m--;
-                k = k.subtract(norm);
             }
         }
-        if (n > 0) for (int i = 0; i < n; i++) answer += "a";
-        else if (m > 0) for (int i = 0; i < m; i++) answer += "z";
-        
+        if (n > 0) for (int i = 0; i < n; i++) answer.append("a");
+        else if (m > 0) for (int i = 0; i < m; i++) answer.append("z");
         System.out.println(answer);
         return;
     }
-
-    public static BigInteger factorial(int v) {
-        if (factorialMemo[v] != null) return factorialMemo[v];
-        factorialMemo[v] = factorial(v-1).multiply(new BigInteger(Integer.toString(v)));
-        return factorialMemo[v];   
-    }
-
     
 }
