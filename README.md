@@ -23,5 +23,6 @@
 |12주차(25.04.05 ~ 25.04.11)|[BOJ2234 성곽](https://www.acmicpc.net/problem/2234)|[BOJ2307 도로검문](https://www.acmicpc.net/problem/2307)|[BOJ2213 트리의 독립집합](https://www.acmicpc.net/problem/2213)|
 |13주차(25.04.21 ~ 25.04.25)|[BOJ2610 회의준비](https://www.acmicpc.net/problem/2610)|[BOJ2169 로봇조종하기](https://www.acmicpc.net/problem/2169)|[BOJ9370 미확인 도착지](https://www.acmicpc.net/problem/9370)|
 |14주차(25.04.29 ~ 25.05.06)|[BOJ15732 도토리 숨기기](https://www.acmicpc.net/problem/15732)|[BOJ1445 일요일 아침의 데이트](https://www.acmicpc.net/problem/1445)|[BOJ1256 사전](https://www.acmicpc.net/problem/1256)|
+|15주차(25.05.07 ~ 25.05.12)|[BOJ1113 수영장만들기](https://www.acmicpc.net/problem/1113)|[BOJ2481 해밍경로](https://www.acmicpc.net/problem/2481)|[BOJ1525 퍼즐](https://www.acmicpc.net/problem/1525)|
 
 
