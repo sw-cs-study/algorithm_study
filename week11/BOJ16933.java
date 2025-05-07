@@ -15,7 +15,7 @@ import java.util.*;
 public class BOJ16933 {
     private static int n, m, k;
     private static char[][] board;
-    private static boolean[][][][] visited; // 방문할때 기준
+    private static boolean[][][] visited; // 방문할때 기준
     private static final int[] dx = {-1, 0, 1, 0};
     private static final int[] dy = {0, 1, 0, -1};
 
@@ -36,7 +36,7 @@ public class BOJ16933 {
         m = Integer.parseInt(st.nextToken());
         k = Integer.parseInt(st.nextToken());
         board = new char[n][m];
-        visited = new boolean[n][m][2][k+1];
+        visited = new boolean[n][m][k+1];
         for (int i = 0; i < n; i++) {
             String line = br.readLine();
             for (int j = 0; j < m; j++) {
@@ -58,7 +58,7 @@ public class BOJ16933 {
         if (n == 1 && m == 1) return 1;
         ArrayDeque<Element> queue = new ArrayDeque<>();
         queue.offer(new Element(0, 0, 1, k, 1));
-        visited[0][0][1][k] = true;
+        visited[0][0][k] = true;
 
         while (!queue.isEmpty()) {
             Element cur = queue.poll();
@@ -70,26 +70,25 @@ public class BOJ16933 {
                 }
                 if (!check(nx, ny)) continue;
                 int nDay = (cur.day + 1) % 2;
-                int nRest = cur.rest;
                 if (board[nx][ny] == '1') {
                     // wall
-                    if (nRest == 0) continue;
+                    if (cur.rest == 0) continue;
                     if (cur.day == 1) {
                         // 낮이면 벽뚫고 가기
-                        nRest--;
+                        if (visited[nx][ny][cur.rest-1]) continue;
+                        queue.offer(new Element(nx, ny, nDay, cur.rest-1, cur.dist+1));
+                        visited[nx][ny][cur.rest-1] = true;
                     } else {
                         // 밤이면 원래 위치에서 하루 대기
-                        nx = cur.x;
-                        ny = cur.y;
+                        queue.offer(new Element(cur.x, cur.y, nDay, cur.rest, cur.dist+1));
+                        visited[cur.x][cur.y][cur.rest] = true;
                     }
-                    if (visited[nx][ny][nDay][nRest]) continue;
-                    queue.offer(new Element(nx, ny, nDay, nRest, cur.dist+1));
-                    visited[nx][ny][nDay][nRest] = true;
+                    
                 } else {
                     // not wall
-                    if (visited[nx][ny][nDay][nRest]) continue;
-                    queue.offer(new Element(nx, ny, nDay, nRest, cur.dist+1));
-                    visited[nx][ny][nDay][nRest] = true;
+                    if (visited[nx][ny][cur.rest]) continue;
+                    queue.offer(new Element(nx, ny, nDay, cur.rest, cur.dist+1));
+                    visited[nx][ny][cur.rest] = true;
                 }
 
             }
