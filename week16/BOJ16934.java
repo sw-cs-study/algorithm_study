@@ -17,15 +17,18 @@ public class BOJ16934 {
 
     private static int n; 
     private static Trie trie;
+    private static StringBuilder answer;
     
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         n = Integer.parseInt(br.readLine());
         trie = new Trie();
+        answer = new StringBuilder();
         for (int i = 0; i < n; i++) {
-            System.out.println(trie.insert(br.readLine()));
+            trie.insert(br.readLine());
+            answer.append("\n");
         }
-        
+        System.out.println(answer);
     }
 
     private static class Node {
@@ -62,19 +65,18 @@ public class BOJ16934 {
         Trie() {
             this.root = new Node(' ');
         }
-        String insert(String word) {
+        void insert(String word) {
             Node cur = root;
-            StringBuilder nickname = new StringBuilder();
             boolean first = true;
             for (char c : word.toCharArray()) {
                 // 현재 문자를 포함하는 경우면 이전 문자의 접두사이므로 별칭에 계속 추가
                 if (cur.hasChild(c)) {
-                    nickname.append(c);
+                    answer.append(c);
                 } else {
                     // 현재 문자를 포함하지 않는 경우 
                     // 처음 여기 들어온 경우 별칭에 추가
                     if (first) {
-                        nickname.append(c);
+                        answer.append(c);
                         first = false;
                     }
                     // 별칭이 더 이상 별칭에 추가하지 않고, children에 추가
@@ -85,13 +87,11 @@ public class BOJ16934 {
             }
             // 끝처리해야함
             cur.setEnd();
-            if (nickname.toString().equals(word)) {
+            if (first && cur.getCount() > 1) {
                 // 같으면 별칭에 숫자 추가해야함. 단, 1인 경우는 제외
-                int count = cur.getCount();
-                if (count > 1) { nickname.append(Integer.toString(cur.getCount())); }
+                answer.append(Integer.toString(cur.getCount()));
             } 
             // 다르면 별칭 그대로 사용
-            return nickname.toString();
         }
     }
 }
