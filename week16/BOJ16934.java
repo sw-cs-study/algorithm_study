@@ -6,6 +6,9 @@
  * 1. 들어온 단어를 순회하면서 접두사 만들기
  * 2. 루트 -> 다음 문자 -> 순으로 접두사로 가능한지(이전 단어들의 접두사가 아닌지) 체크, 이전 단어의 접두사면 현재 별칭에 계속 추가, 그렇지 않으면 추가 그만
  * 3. 단어의 끝에 도달했을 때도 접두사로 가능한지 체크해야함
+ * 
+ * (수정)
+ * io 를 한번에 처리
  */
 
 package week16;
@@ -17,18 +20,17 @@ public class BOJ16934 {
 
     private static int n; 
     private static Trie trie;
-    private static StringBuilder answer;
     
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         n = Integer.parseInt(br.readLine());
         trie = new Trie();
-        answer = new StringBuilder();
+        StringBuilder answer = new StringBuilder();
         for (int i = 0; i < n; i++) {
-            trie.insert(br.readLine());
-            answer.append("\n");
+            answer.append(trie.insert(br.readLine())).append("\n");
         }
         System.out.println(answer);
+        
     }
 
     private static class Node {
@@ -61,22 +63,24 @@ public class BOJ16934 {
 
     private static class Trie {
         Node root;
+        HashSet<String> prefixMap; // 접두사 저장
 
         Trie() {
             this.root = new Node(' ');
         }
-        void insert(String word) {
+        String insert(String word) {
             Node cur = root;
+            StringBuilder nickname = new StringBuilder();
             boolean first = true;
             for (char c : word.toCharArray()) {
                 // 현재 문자를 포함하는 경우면 이전 문자의 접두사이므로 별칭에 계속 추가
                 if (cur.hasChild(c)) {
-                    answer.append(c);
+                    nickname.append(c);
                 } else {
                     // 현재 문자를 포함하지 않는 경우 
                     // 처음 여기 들어온 경우 별칭에 추가
                     if (first) {
-                        answer.append(c);
+                        nickname.append(c);
                         first = false;
                     }
                     // 별칭이 더 이상 별칭에 추가하지 않고, children에 추가
@@ -87,11 +91,13 @@ public class BOJ16934 {
             }
             // 끝처리해야함
             cur.setEnd();
-            if (first && cur.getCount() > 1) {
+            if (nickname.toString().equals(word)) {
                 // 같으면 별칭에 숫자 추가해야함. 단, 1인 경우는 제외
-                answer.append(Integer.toString(cur.getCount()));
+                int count = cur.getCount();
+                if (count > 1) { nickname.append(Integer.toString(cur.getCount())); }
             } 
             // 다르면 별칭 그대로 사용
+            return nickname.toString();
         }
     }
 }
