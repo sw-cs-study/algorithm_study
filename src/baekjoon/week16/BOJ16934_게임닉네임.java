@@ -1,4 +1,4 @@
-package week16;
+package baekjoon.week16;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
