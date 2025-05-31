@@ -26,4 +26,5 @@
 |15주차(25.05.07 ~ 25.05.12)|[BOJ1113 수영장만들기](https://www.acmicpc.net/problem/1113)|[BOJ2481 해밍경로](https://www.acmicpc.net/problem/2481)|[BOJ1525 퍼즐](https://www.acmicpc.net/problem/1525)|
 |16주차(25.05.13 ~ 25.05.19)|[BOJ1365 꼬인 전깃줄](https://www.acmicpc.net/problem/1365)|[BOJ32387 충전하기](https://www.acmicpc.net/problem/32387)|[BOJ16934 게임 닉네임](https://www.acmicpc.net/problem/16934)|
 |17주차(25.05.20 ~ 25.05.26)|[BOJ28325 호숫가의 개미굴](https://www.acmicpc.net/problem/28325)|[BOJ2352 반도체 설계](https://www.acmicpc.net/problem/2352)|[BOJ1781 컵라면](https://www.acmicpc.net/problem/1781)|
+|18주차(25.05.27 ~ 25.06.03)|[BOJ17951 흩날리는 시험지 속에서 내 평점이 느껴진거야](https://www.acmicpc.net/problem/17951)|[BOJ12996 Acka](https://www.acmicpc.net/problem/12996)|[BOJ11066 파일 합치기](https://www.acmicpc.net/problem/11066)|
 
