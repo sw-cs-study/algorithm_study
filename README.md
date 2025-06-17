@@ -28,4 +28,5 @@
 |17주차(25.05.20 ~ 25.05.26)|[BOJ28325 호숫가의 개미굴](https://www.acmicpc.net/problem/28325)|[BOJ2352 반도체 설계](https://www.acmicpc.net/problem/2352)|[BOJ1781 컵라면](https://www.acmicpc.net/problem/1781)|
 |18주차(25.05.27 ~ 25.06.03)|[BOJ17951 흩날리는 시험지 속에서 내 평점이 느껴진거야](https://www.acmicpc.net/problem/17951)|[BOJ12996 Acka](https://www.acmicpc.net/problem/12996)|[BOJ11066 파일 합치기](https://www.acmicpc.net/problem/11066)|
 |19주차(25.06.04 ~ 25.06.16)|[BOJ1053 팰린드롬 공장](https://www.acmicpc.net/problem/1053)|[BOJ1744 수 묶기](https://www.acmicpc.net/problem/1744)|[BOJ14867 물통](https://www.acmicpc.net/problem/14867)|
+|20주차(25.06.17 ~ 25.06.23)|[BOJ1749 점수따먹기](https://www.acmicpc.net/problem/1749)|[BOJ2515 전시장](https://www.acmicpc.net/problem/2515)|[BOJ14427 수열과쿼리15](https://www.acmicpc.net/problem/14427)|
 
