@@ -30,4 +30,5 @@
 |19주차(25.06.04 ~ 25.06.16)|[BOJ1053 팰린드롬 공장](https://www.acmicpc.net/problem/1053)|[BOJ1744 수 묶기](https://www.acmicpc.net/problem/1744)|[BOJ14867 물통](https://www.acmicpc.net/problem/14867)|
 |20주차(25.06.17 ~ 25.06.23)|[BOJ1749 점수따먹기](https://www.acmicpc.net/problem/1749)|[BOJ2515 전시장](https://www.acmicpc.net/problem/2515)|[BOJ14427 수열과쿼리15](https://www.acmicpc.net/problem/14427)|
 |21주차(25.06.24 ~ 25.07.07)|[BOJ8972 미친 아두이노](https://www.acmicpc.net/problem/8972)|[BOJ2228 구간 나누기](https://www.acmicpc.net/problem/2228)|[BOJ1670 정상회담2](https://www.acmicpc.net/problem/1670)|
+|22주차(25.07.08 ~ 25.07.14)|[BOJ1275 커피숍2](https://www.acmicpc.net/problem/1275)|[BOJ12784 인하니카 공화국](https://www.acmicpc.net/problem/12784)|[BOJ1240 노드사이의 거리](https://www.acmicpc.net/problem/1240)|
 
