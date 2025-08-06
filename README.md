@@ -32,4 +32,5 @@
 |21주차(25.06.24 ~ 25.07.07)|[BOJ8972 미친 아두이노](https://www.acmicpc.net/problem/8972)|[BOJ2228 구간 나누기](https://www.acmicpc.net/problem/2228)|[BOJ1670 정상회담2](https://www.acmicpc.net/problem/1670)|
 |22주차(25.07.08 ~ 25.07.14)|[BOJ1275 커피숍2](https://www.acmicpc.net/problem/1275)|[BOJ12784 인하니카 공화국](https://www.acmicpc.net/problem/12784)|[BOJ1240 노드사이의 거리](https://www.acmicpc.net/problem/1240)|
 |23주차(25.07.15 ~ 25.07.24)|[BOJ2655 가장높은탑쌓기](https://www.acmicpc.net/problem/2655)|[BOJ16957 체스판 위의 공](https://www.acmicpc.net/problem/16957)|[BOJ18808 스티커 붙이기](https://www.acmicpc.net/problem/18808)|
+|24주차(25.08.04 ~ 25.08.11)|[BOJ1036 36진수](https://www.acmicpc.net/problem/1036)|[BOJ1800 인터넷 설치](https://www.acmicpc.net/problem/1800)|[BOJ12969 ABC](https://www.acmicpc.net/problem/12969)|
 
