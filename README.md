@@ -34,4 +34,5 @@
 |23주차(25.07.15 ~ 25.07.24)|[BOJ2655 가장높은탑쌓기](https://www.acmicpc.net/problem/2655)|[BOJ16957 체스판 위의 공](https://www.acmicpc.net/problem/16957)|[BOJ18808 스티커 붙이기](https://www.acmicpc.net/problem/18808)|
 |24주차(25.08.04 ~ 25.08.11)|[BOJ1036 36진수](https://www.acmicpc.net/problem/1036)|[BOJ1800 인터넷 설치](https://www.acmicpc.net/problem/1800)|[BOJ12969 ABC](https://www.acmicpc.net/problem/12969)|
 |25주차(25.08.12 ~ 25.08.19)|[BOJ5213 과외맨](https://www.acmicpc.net/problem/5213)|[BOJ2233 사과나무](https://www.acmicpc.net/problem/2233)|[BOJ15684 사다리 조작](https://www.acmicpc.net/problem/15684)|
+|26주차(25.09.03 ~ 25.09.08)|[BOJ16986 인싸들의 가위바위보](https://www.acmicpc.net/problem/16986)|[BOJ2450 모양정돈](https://www.acmicpc.net/problem/2450)||
 
