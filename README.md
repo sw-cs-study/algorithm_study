@@ -36,4 +36,5 @@
 |25주차(25.08.12 ~ 25.08.19)|[BOJ5213 과외맨](https://www.acmicpc.net/problem/5213)|[BOJ2233 사과나무](https://www.acmicpc.net/problem/2233)|[BOJ15684 사다리 조작](https://www.acmicpc.net/problem/15684)|
 |26주차(25.09.03 ~ 25.09.08)|[BOJ16986 인싸들의 가위바위보](https://www.acmicpc.net/problem/16986)|[BOJ2450 모양정돈](https://www.acmicpc.net/problem/2450)||
 |27주차(25.09.09 ~ 25.09.15)|[BOJ1033 칵테일](https://www.acmicpc.net/problem/1033)|[BOJ8980 택배](https://www.acmicpc.net/problem/8980)|[BOJ2632 피자판매](https://www.acmicpc.net/problem/2632)|
+|28주차(25.09.16 ~ 25.09.22)|[BOJ3687 성냥개비](https://www.acmicpc.net/problem/3687)|[BOJ20191 줄임말](https://www.acmicpc.net/problem/20191)|[BOJ1234 크리스마스 트리](https://www.acmicpc.net/problem/1234)|
 
