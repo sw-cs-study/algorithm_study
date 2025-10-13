@@ -39,3 +39,4 @@
 |28주차(25.09.16 ~ 25.09.22)|[BOJ3687 성냥개비](https://www.acmicpc.net/problem/3687)|[BOJ20191 줄임말](https://www.acmicpc.net/problem/20191)|[BOJ1234 크리스마스 트리](https://www.acmicpc.net/problem/1234)|
 |29주차(25.09.23 ~ 25.09.29)|[BOJ21611 마법사 상어와 블리자드](https://www.acmicpc.net/problem/21611)|[BOJ5626 제단](https://www.acmicpc.net/problem/5626)|[BOJ10160 암호](https://www.acmicpc.net/problem/10160)|
 |30주차(25.09.30 ~ 25.10.13)|[BOJ23290 마법사 상어와 복제](https://www.acmicpc.net/problem/23290)|[BOJ17114 하이퍼 토마토](https://www.acmicpc.net/problem/17114)|[BOJ4902 삼각형의 값](https://www.acmicpc.net/problem/4902)|
+|31주차(25.10.14 ~ 25.10.20)|[BOJ4574 스도미노쿠](https://www.acmicpc.net/problem/4574)|[BOJ3665 최종순위](https://www.acmicpc.net/problem/3665)|[BOJ11505 구간 곱 곱하기](https://www.acmicpc.net/problem/11505)|
