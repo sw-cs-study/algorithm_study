@@ -28,7 +28,6 @@ public class BOJ17114_하이퍼토마토 {
 
 	private static int m, n, o, p, q, r, s, t, u, v, w;
 	private static int[][][][][][][][][][][] graph;
-	private static boolean[][][][][][][][][][][] visited;
 
 
 	//이동 가능한지 체크 - 격자판을 벗어나면 안되고, 안익은 토마토로 가야 함.
@@ -60,21 +59,22 @@ public class BOJ17114_하이퍼토마토 {
 			result = Math.max(result, currentNode[11]);
 
 			for(int i = 0; i < 22; i++){
-				int nextM = dM[i];
-				int nextN = dN[i];
-				int nextO = dO[i];
-				int nextP = dP[i];
-				int nextQ = dQ[i];
-				int nextR = dR[i];
-				int nextS = dS[i];
-				int nextT = dT[i];
-				int nextU = dU[i];
-				int nextV = dV[i];
-				int nextW = dW[i];
+				int nextM = currentNode[0] + dM[i];
+				int nextN = currentNode[1] + dN[i];
+				int nextO = currentNode[2] + dO[i];
+				int nextP = currentNode[3] + dP[i];
+				int nextQ = currentNode[4] + dQ[i];
+				int nextR = currentNode[5] + dR[i];
+				int nextS = currentNode[6] + dS[i];
+				int nextT = currentNode[7] + dT[i];
+				int nextU = currentNode[8] + dU[i];
+				int nextV = currentNode[9] + dV[i];
+				int nextW = currentNode[10] + dW[i];
 
 
 				//방문이 불가능하면 패스.
 				if(!visitedCheck(new int[]{nextM, nextN, nextO, nextP, nextQ, nextR, nextS, nextT, nextU, nextV, nextW})) continue;
+
 
 				needVisited.add(new int[]{
 					nextM, nextN, nextO, nextP, nextQ, nextR, nextS, nextT, nextU, nextV, nextW, currentNode[11] + 1
@@ -128,11 +128,26 @@ public class BOJ17114_하이퍼토마토 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine());
 
+
+		m = Integer.parseInt(st.nextToken());
+		n = Integer.parseInt(st.nextToken());
+		o = Integer.parseInt(st.nextToken());
+		p = Integer.parseInt(st.nextToken());
+		q = Integer.parseInt(st.nextToken());
+		r = Integer.parseInt(st.nextToken());
+		s = Integer.parseInt(st.nextToken());
+		t = Integer.parseInt(st.nextToken());
+		u = Integer.parseInt(st.nextToken());
+		v = Integer.parseInt(st.nextToken());
+		w = Integer.parseInt(st.nextToken());
+
+
 		graph = new int[m][n][o][p][q][r][s][t][u][v][w];
-		visited = new boolean[m][n][o][p][q][r][s][t][u][v][w];
 
 		Queue<int[]> needVisited = new ArrayDeque<>();
 
+
+		int zeroCount = 0; //시작시점에 모든 토마토가 익어있는지 확인용.
 
 		//m, n, o, p, q, r, s, t, u, v, w;
 		for(int tempW = 0; tempW< w; tempW++){
@@ -152,13 +167,15 @@ public class BOJ17114_하이퍼토마토 {
 
 													int tempValue = Integer.parseInt(st.nextToken());
 
-													if(tempValue == 1){
-														needVisited.add(new int[]{
-															tempM, tempN, tempO, tempP, tempQ, tempR, tempS, tempT, tempU, tempV, tempW, 1
-														});
-													}
+													if(tempValue == 0) zeroCount++;
 
 													graph[tempM][tempN][tempO][tempP][tempQ][tempR][tempS][tempT][tempU][tempV][tempW] = tempValue;
+
+													if(tempValue == 1){
+														needVisited.add(new int[]{
+															tempM, tempN, tempO, tempP, tempQ, tempR, tempS, tempT, tempU, tempV, tempW, 0
+														});
+													}
 
 												}
 											}
@@ -172,16 +189,17 @@ public class BOJ17114_하이퍼토마토 {
 			}
 		}
 
+
 		int time = 0;
 
 		//시작시점에 전부 익어있지 않으면,bfs 탐색시작.
-		if(!check()){
+		if(zeroCount > 0){
 
-			System.out.println("test1");
-			int tempTime = bfs(needVisited);
+			time = bfs(needVisited);
+
 
 			//bfs 탐색후, 모든 토마토가 익었으면, 결과값 저장, 아니면 -1 반환.
-			if(!check()) tempTime = -1;
+			if(!check()) time = -1;
 		}
 
 		System.out.println(time);
