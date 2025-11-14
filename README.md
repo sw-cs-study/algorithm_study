@@ -41,3 +41,4 @@
 |30주차(25.09.30 ~ 25.10.13)|[BOJ23290 마법사 상어와 복제](https://www.acmicpc.net/problem/23290)|[BOJ17114 하이퍼 토마토](https://www.acmicpc.net/problem/17114)|[BOJ4902 삼각형의 값](https://www.acmicpc.net/problem/4902)|
 |31주차(25.10.14 ~ 25.10.03)|[BOJ4574 스도미노쿠](https://www.acmicpc.net/problem/4574)|[BOJ3665 최종순위](https://www.acmicpc.net/problem/3665)|[BOJ11505 구간 곱 곱하기](https://www.acmicpc.net/problem/11505)|
 |32주차(25.11.04 ~ 25.11.10)|[BOJ1766 문제집](https://www.acmicpc.net/problem/1766)|[BOJ17472 다리만들기2](https://www.acmicpc.net/problem/17472)|[BOJ15999 뒤집기](https://www.acmicpc.net/problem/15999)|
+|33주차(25.11.11 ~ 25.11.17)|[BOJ20183 골목대장호석-효율성2](https://www.acmicpc.net/problem/20183)|[BOJ24042 횡단보도](https://www.acmicpc.net/problem/24042)|[BOJ1377 버블소트](https://www.acmicpc.net/problem/1377)|
