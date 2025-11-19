@@ -42,3 +42,4 @@
 |31주차(25.10.14 ~ 25.10.03)|[BOJ4574 스도미노쿠](https://www.acmicpc.net/problem/4574)|[BOJ3665 최종순위](https://www.acmicpc.net/problem/3665)|[BOJ11505 구간 곱 곱하기](https://www.acmicpc.net/problem/11505)|
 |32주차(25.11.04 ~ 25.11.10)|[BOJ1766 문제집](https://www.acmicpc.net/problem/1766)|[BOJ17472 다리만들기2](https://www.acmicpc.net/problem/17472)|[BOJ15999 뒤집기](https://www.acmicpc.net/problem/15999)|
 |33주차(25.11.11 ~ 25.11.17)|[BOJ20183 골목대장호석-효율성2](https://www.acmicpc.net/problem/20183)|[BOJ24042 횡단보도](https://www.acmicpc.net/problem/24042)|[BOJ1377 버블소트](https://www.acmicpc.net/problem/1377)|
+|34주차(25.11.18 ~ 25.11.24)|[BOJ15823 카드팩 구매하기](https://www.acmicpc.net/problem/15823)|[BOJ1917 정육면체 전개도](https://www.acmicpc.net/problem/1917)|[BOJ21276 계보 복원가 호석](https://www.acmicpc.net/problem/21276)|
