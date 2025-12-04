@@ -43,3 +43,4 @@
 |32주차(25.11.04 ~ 25.11.10)|[BOJ1766 문제집](https://www.acmicpc.net/problem/1766)|[BOJ17472 다리만들기2](https://www.acmicpc.net/problem/17472)|[BOJ15999 뒤집기](https://www.acmicpc.net/problem/15999)|
 |33주차(25.11.11 ~ 25.11.17)|[BOJ20183 골목대장호석-효율성2](https://www.acmicpc.net/problem/20183)|[BOJ24042 횡단보도](https://www.acmicpc.net/problem/24042)|[BOJ1377 버블소트](https://www.acmicpc.net/problem/1377)|
 |34주차(25.11.18 ~ 25.11.24)|[BOJ15823 카드팩 구매하기](https://www.acmicpc.net/problem/15823)|[BOJ1917 정육면체 전개도](https://www.acmicpc.net/problem/1917)|[BOJ21276 계보 복원가 호석](https://www.acmicpc.net/problem/21276)|
+|35주차(25.12.01 ~ 25.12.08)|[BOJ1700 멀티탭 스케줄링](https://www.acmicpc.net/problem/1700)|[BOJ16946 벽부수고 이동하기4](https://www.acmicpc.net/problem/16946)|[BOJ1727 커플 만들기](https://www.acmicpc.net/problem/1727)|
