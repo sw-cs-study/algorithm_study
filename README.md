@@ -45,3 +45,4 @@
 |34주차(25.11.18 ~ 25.11.24)|[BOJ15823 카드팩 구매하기](https://www.acmicpc.net/problem/15823)|[BOJ1917 정육면체 전개도](https://www.acmicpc.net/problem/1917)|[BOJ21276 계보 복원가 호석](https://www.acmicpc.net/problem/21276)|
 |35주차(25.12.01 ~ 25.12.08)|[BOJ1700 멀티탭 스케줄링](https://www.acmicpc.net/problem/1700)|[BOJ16946 벽부수고 이동하기4](https://www.acmicpc.net/problem/16946)|[BOJ1727 커플 만들기](https://www.acmicpc.net/problem/1727)|
 |36주차(25.12.09 ~ 25.12.15)|[BOJ14391 종이 조각](https://www.acmicpc.net/problem/14391)|[BOJ20119 클레어와 물약](https://www.acmicpc.net/problem/20119)|[BOJ17612 쇼핑몰](https://www.acmicpc.net/problem/17612)|
+|37주차(25.12.23 ~ 26.01.05)|[BOJ9576 책 나눠주기](https://www.acmicpc.net/problem/9576)|[BOJ16681 등산](https://www.acmicpc.net/problem/16681)|[BOJ22948 원 이동하기2](https://www.acmicpc.net/problem/22948)|
