@@ -46,3 +46,4 @@
 |35주차(25.12.01 ~ 25.12.08)|[BOJ1700 멀티탭 스케줄링](https://www.acmicpc.net/problem/1700)|[BOJ16946 벽부수고 이동하기4](https://www.acmicpc.net/problem/16946)|[BOJ1727 커플 만들기](https://www.acmicpc.net/problem/1727)|
 |36주차(25.12.09 ~ 25.12.15)|[BOJ14391 종이 조각](https://www.acmicpc.net/problem/14391)|[BOJ20119 클레어와 물약](https://www.acmicpc.net/problem/20119)|[BOJ17612 쇼핑몰](https://www.acmicpc.net/problem/17612)|
 |37주차(25.12.23 ~ 26.01.05)|[BOJ9576 책 나눠주기](https://www.acmicpc.net/problem/9576)|[BOJ16681 등산](https://www.acmicpc.net/problem/16681)|[BOJ22948 원 이동하기2](https://www.acmicpc.net/problem/22948)|
+|38주차(26.01.06 ~ 26.01.12)|[BOJ1035 조각 움직이기](https://www.acmicpc.net/problem/1035)|[BOJ20440 니가 싫어 싫어 너무 싫어 싫어 오지 마 내게 찝쩍대지마](https://www.acmicpc.net/problem/20440)|[BOJ22343 괄호의 값 비교](https://www.acmicpc.net/problem/22343)|
