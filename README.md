@@ -49,3 +49,4 @@
 |38주차(26.01.06 ~ 26.01.12)|[BOJ1035 조각 움직이기](https://www.acmicpc.net/problem/1035)|[BOJ20440 니가 싫어 싫어 너무 싫어 싫어 오지 마 내게 찝쩍대지마](https://www.acmicpc.net/problem/20440)|[BOJ22343 괄호의 값 비교](https://www.acmicpc.net/problem/22343)|
 |39주차(26.01.13 ~ 26.01.19)|[BOJ2585 경비행기](https://www.acmicpc.net/problem/2585)|[BOJ23059 리그 오브 레게노](https://www.acmicpc.net/problem/23059)|[BOJ6209 제자리 멀리뛰기](https://www.acmicpc.net/problem/6209)|
 |40주차(26.02.02 ~ 26.02.09)|[BOJ28707 배열정렬](https://www.acmicpc.net/problem/28707)|[BOJ24232 망가진 나무](https://www.acmicpc.net/problem/24232)|[BOJ1175 배달](https://www.acmicpc.net/problem/1175)|
+|41주차(26.02.10 ~ 26.02.23)|[BOJ16985 Maaaaaaaaaze](https://www.acmicpc.net/problem/16985)|[BOJ1508 레이스](https://www.acmicpc.net/problem/1508)|[BOJ33561 임스의 땅따먹기](https://www.acmicpc.net/problem/33561)|
