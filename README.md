@@ -53,3 +53,4 @@
 |42주차(26.03.23 ~ 26.04.06)|[BOJ10840 구간 성분](https://www.acmicpc.net/problem/10840)|[BOJ1219 오민식의 고민](https://www.acmicpc.net/problem/1219)|[BOJ16238 독수리](https://www.acmicpc.net/problem/16238)|
 |43주차(26.04.07 ~ 26.04.13)|[BOJ1028 다이아몬드 광산](https://www.acmicpc.net/problem/1028)|[BOJ1194 달이 차오른다 가자](https://www.acmicpc.net/problem/1194)|[BOJ16402 제국](https://www.acmicpc.net/problem/16402)|
 |44주차(26.04.27 ~ 26.05.04)|[연속 펄스 부분 수열의 합](https://school.programmers.co.kr/learn/courses/30/lessons/161988)|[힌트 스테이지](https://school.programmers.co.kr/learn/courses/30/lessons/468377?language=java)|[서버 증설 횟수](https://school.programmers.co.kr/learn/courses/30/lessons/389479)|
+|45주차(26.05.11 ~ 26.05.25)|[카카오 앱 정리하기](https://school.programmers.co.kr/learn/courses/30/lessons/468374)|[당구연습](https://school.programmers.co.kr/learn/courses/30/lessons/169198)|[퍼즐 게임 챌린지](https://school.programmers.co.kr/learn/courses/30/lessons/340212)|
